@@ -1,0 +1,48 @@
+{
+  "manifestVersion": 1,
+  "id": "google-chat",
+  "name": "Google chat webhook",
+  "version": "0.0.1",
+  "publisher": "AlisonRodrigues",
+  "public": true,
+  "galleryFlags": [
+    "Public"
+  ],
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "description": "Tool for send a message to google chat.",
+  "categories": [
+    "Azure Pipelines"
+  ],
+  "icons": {
+    "default": "images/extension-icon.png"
+  },
+  "files": [
+    {
+      "path": "googlechatwebhook"
+    }
+  ],
+  "content": {
+    "details": {
+      "path": "overview.md"
+    },
+    "license": {
+      "path": "LICENSE"
+    }
+  },
+  "contributions": [
+    {
+      "id": "webhook",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "googlechatwebhook"
+      }
+    }
+  ]
+}

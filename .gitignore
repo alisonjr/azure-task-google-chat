@@ -1,0 +1,4 @@
+node_modules
+googlechatwebhook/node_modules
+googlechatwebhook/package-lock.json
+.vscode
