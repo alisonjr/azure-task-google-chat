@@ -27,7 +27,7 @@
         },
         {
             "name": "message",
-            "type": "string",
+            "type": "multiLine",
             "label": "Text message",
             "defaultValue": "",
             "required": true,
