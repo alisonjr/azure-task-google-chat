@@ -31,6 +31,10 @@ jobs:
         sudo npm install -g tfx-cli
         tfx extension create --manifest-globs vss-extension.json
 
+  publish:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
     - uses: actions/upload-artifact@v3
       with:
         name: my-artifact

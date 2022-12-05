@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "google-chat",
   "name": "Google chat webhook",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publisher": "AlisonRodrigues",
   "public": true,
   "galleryFlags": [
