@@ -39,7 +39,7 @@ jobs:
 
     # 6. Criar o arquivo .vsix da extensão
     - name: Create VSIX package
-      run: tfx extension create --manifest-globs googlechatwebhook/vss-extension.json
+      run: tfx extension create --manifest-globs vss-extension.json
 
     # 7. Publicar a extensão no Azure DevOps Marketplace
     - name: Publish VSIX to Azure DevOps Marketplace
