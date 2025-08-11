@@ -1,7 +1,7 @@
 name: Publish VSIX to Azure DevOps Marketplace
 
 on:
-  pull_request:
+  push:
     branches:
       - main
 
@@ -49,7 +49,7 @@ jobs:
 
     # 8. Upload do arquivo .vsix como artefato de release no GitHub
     - name: Upload VSIX as GitHub artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: google-chat-az-extension # Nome do artefato, pode ser qualquer nome desejado
         path: "*.vsix" # Caminho para o arquivo .vsix gerado, considerando que o arquivo esteja na raiz
