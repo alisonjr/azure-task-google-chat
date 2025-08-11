@@ -52,4 +52,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: google-chat-az-extension # Nome do artefato, pode ser qualquer nome desejado
-        path: *.vsix  # Caminho para o arquivo .vsix gerado, considerando que o arquivo esteja na raiz
+        path: "*.vsix" # Caminho para o arquivo .vsix gerado, considerando que o arquivo esteja na raiz
